@@ -255,15 +255,16 @@ p:last-child { margin-bottom: 0; }
 
 .hero-photo {
   flex: 0 0 auto;
-  width: 150px;
-  height: 150px;
+  width: 165px;
+  height: 165px;
   border-radius: 4px;
   object-fit: cover;
+  object-position: center 30%;
   border: 1px solid var(--hairline);
 }
 
 @media (min-width: 640px) {
-  .hero-photo { width: 184px; height: 184px; }
+  .hero-photo { width: 200px; height: 200px; }
 }
 
 .hero-photo--placeholder {
