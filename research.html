@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research — Alejandro Medina Sandín</title>
+  <meta name="description" content="Working papers and conference presentations by Alejandro Medina Sandín on pay-for-delay agreements, generic entry, mergers, cartels, and AI in pharmaceutical and consumer markets." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Research — Alejandro Medina Sandín" />
+  <meta property="og:description" content="Working papers on empirical industrial organization, competition policy, and antitrust." />
+  <meta property="og:locale" content="en_US" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Alejandro Medina Sandín</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="research.html" aria-current="page">Research</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main class="container">
+
+    <h1>Research</h1>
+    <p class="lead muted">My research focuses on antitrust and empirical industrial organization. I am particularly interested in competition policy questions such as cartel detection, the prevention of anticompetitive conduct, and the welfare consequences of firm behavior in markets. In parallel, I have developed a line of work at the intersection of artificial intelligence and economics, examining how large language models relate to market structure and how they perform as tools for economic reasoning and teaching.</p>
+
+    <!-- Working papers -->
+    <section class="section--wide" aria-labelledby="wp-title">
+      <h2 id="wp-title" class="section-title">Working Papers</h2>
+
+      <ol class="papers">
+
+        <!-- 1 — Job Market Paper -->
+        <li class="paper paper--jmp reveal">
+          <div class="paper-grid">
+            <figure class="paper-figure">
+              <img src="figures/fig-pay-for-delay.png" alt="Price evolution of the topical gel pump: real branded prices rise after 2011 while simulated branded and generic prices under earlier entry stay well below, 2009–2015" />
+            </figure>
+            <div class="paper-content">
+          <span class="tag">Job Market Paper</span>
+          <h3 class="paper-title">Pay for Delay: Preventing Competition in Pharmaceutical Markets</h3>
+          <div class="paper-meta"><span class="paper-status">Working paper</span></div>
+          <div class="paper-links">
+            <a href="https://ssrn.com/abstract=5308812" target="_blank" rel="noopener">Available at SSRN</a>
+          </div>
+          <p class="abstract-label">Abstract</p>
+            <p class="abstract-body">Pay-for-Delay agreements occur when a branded pharmaceutical firm compensates a generic competitor to delay market entry, raising concerns about competition and consumer welfare. This paper quantifies the consumer harm from the agreement that delayed generic entry into the U.S. Testosterone Replacement Therapy market from 2006 until 2015, focusing on the AndroGel® settlement. I estimate a two-level nested logit demand model on monthly product-level data, recover marginal costs from Bertrand-Nash first-order conditions, and simulate a counterfactual scenario in which generic products enter the market prior to 2015. The counterfactual is constructed by augmenting the choice set with fictitious generics and solving for new equilibrium prices, accounting for the endogenous price responses of all incumbent firms. The results indicate that earlier generic entry would have made alternatives available at prices 5–11% below branded levels in the affected forms. Total consumer damages from the agreement amount to $326 million over the observed delay period, an 18% increase in consumer surplus that would have been realized under earlier entry. The supply-side analysis confirms that the agreement was individually rational for all parties, sustained by the direct transfer of monopoly rents rather than by strategic advantages from delayed entry.</p>
+            </div>
+          </div>
+        </li>
+
+        <!-- 2 -->
+        <li class="paper reveal">
+          <div class="paper-grid">
+            <figure class="paper-figure">
+              <!-- FIGURE PLACEHOLDER: replace with <img src="figures/fig-generic-paradox.png" alt="Branded price response by therapeutic class" /> -->
+              <img src="figures/fig-generic-paradox.png" alt="ATT effects on branded price for therapeutic class C10: near-zero pre-treatment, rising to about +0.5 around 30 quarters after generic entry" />
+            </figure>
+            <div class="paper-content">
+          <h3 class="paper-title">When Does the "Generic Paradox" Occur? Evidence from Therapeutic Class Heterogeneity</h3>
+          <div class="paper-meta"><span class="paper-status">Working paper</span></div>
+          <p class="abstract-label">Abstract</p>
+            <p class="abstract-body">Standard economic theory predicts that prices should decline as the number of competitors increases. However, in pharmaceutical markets, empirical evidence on the effect of generic entry on branded drug prices remains unclear. While some studies find that branded prices increase after generic entry (the so-called "Generic Paradox"), others document price declines. This paper investigates whether different markets defined by therapeutic class can explain these divergent findings, and offers the broadest empirical test of the Generic Paradox to date. Using a comprehensive dataset of over 475 branded products across two major therapeutic classes (C10 and C09), I apply the Callaway and Sant'Anna (2021) difference-in-differences estimator to evaluate the effect of generic entry on branded drug prices and market shares. The results reveal a clear divergence: in class C10 branded prices increase by approximately 50% after 30 quarters, while in C09 they decline by 20–40% after 20 quarters. Both classes experience branded market share erosion, measured as the market share of all branded products within a particular molecule, but at different speeds: C09 within 10 quarters versus approximately 20 quarters in C10. This contributes to the literature by showing that the Generic Paradox is therapeutic-class specific, indicating that prior mixed evidence may reflect genuine heterogeneity across markets, and highlighting the need for future research to identify the underlying market characteristics that drive this paradox.</p>
+            </div>
+          </div>
+        </li>
+
+        <!-- 3 -->
+        <li class="paper reveal">
+          <div class="paper-grid">
+            <figure class="paper-figure">
+              <!-- FIGURE PLACEHOLDER: replace with <img src="figures/fig-ai-antitrust.png" alt="LLM recommendation concentration vs. market shares" /> -->
+              <img src="figures/fig-ai-antitrust.png" alt="HHI of LLM brand recommendations by consumer category for Claude, Gemini, and GPT-4o, on a 10,000-point scale" />
+            </figure>
+            <div class="paper-content">
+          <h3 class="paper-title">AI Meets Antitrust: How Large Language Models Reshape Market Concentration</h3>
+          <div class="paper-meta"><span class="paper-status">Working paper</span></div>
+          <p class="abstract-label">Abstract</p>
+            <p class="abstract-body">Large language models are rapidly becoming a primary interface for consumer product discovery, yet little is known about how their recommendations relate to real-world market structure. This paper provides the first empirical benchmark of LLM brand recommendations against actual market shares. Using 1,429 responses from three frontier models (GPT-4o, Claude Sonnet 4, Gemini 2.5 Flash Lite) across sixteen U.S. consumer categories, I compare the implied concentration of LLM recommendations to retail-value shares from Euromonitor Passport 2024. In fragmented markets such as skincare, LLMs concentrate their recommendations on fewer brands than the market share distribution would suggest; in highly concentrated markets such as headphones, they distribute recommendations across more brands than the market share distribution reflects. Both patterns reflect a single phenomenon: LLM recommendations live in a narrow concentration band roughly one third the width of the real market's, regardless of where the real market sits. A second pattern tilts top recommendations toward specialist and premium brands that hold only two-thirds of the market share of actual category leaders. Findings are stable across the three models studied.</p>
+            </div>
+          </div>
+        </li>
+
+        <!-- 4 — AI Meets Econometrics -->
+        <li class="paper reveal">
+          <div class="paper-grid">
+            <figure class="paper-figure">
+              <img src="figures/fig-ai-econometrics.png" alt="Pairwise global win rate by question difficulty (Low, Medium, High) for Claude vs GPT, Claude vs DeepSeek, and GPT vs DeepSeek" />
+            </figure>
+            <div class="paper-content">
+          <h3 class="paper-title">AI Meets Econometrics: A Multi-Model Evaluation of LLM Pedagogical Quality in Economics</h3>
+          <div class="paper-meta"><span class="paper-status">Working paper — R&amp;R, International Review of Economics Education (IREE)</span></div>
+          <p class="abstract-label">Abstract</p>
+            <p class="abstract-body">This paper evaluates the pedagogical quality of three frontier large language models — Claude Sonnet 4.5, GPT-5, and DeepSeek-V3 — as study aids for undergraduate econometrics. A sample of 29 questions-subquestions drawn from a typical undergraduate econometrics book, covering OLS, panel data, instrumental variables, and time series, is submitted to each model via API under identical prompts. Responses are scored using a seven-dimension rubric that separates technical correctness from pedagogical quality, and models are compared using three pairwise metrics adapted from an existing framework. All three models achieve very good scores on accuracy, completeness, and terminology, indicating that factual reliability no longer discriminates between frontier systems. The meaningful differences emerge in pedagogical dimensions: technical clarity, explanatory clarity, and pedagogical usefulness. Claude leads overall, particularly on computational questions, while GPT produces superior responses to conceptual questions. DeepSeek consistently underperforms on pedagogical quality despite comparable factual accuracy. These findings imply that the pedagogical risk of AI-assisted econometrics learning lies not in incorrect content but in the quality of explanation that accompanies correct answers, and that the optimal model choice depends on the type of task.</p>
+            </div>
+          </div>
+        </li>
+
+      </ol>
+    </section>
+
+    <!-- Work in progress -->
+    <section aria-labelledby="wip-title">
+      <h2 id="wip-title" class="section-title">Work in Progress</h2>
+
+      <ol class="papers">
+        <li class="paper reveal">
+          <h3 class="paper-title">Can Divestitures Undo Cartel Damage? Evidence from the Teva-Allergan Merger</h3>
+          <div class="paper-meta"><span class="paper-status">Work in progress</span></div>
+          <p class="abstract-label">Abstract</p>
+            <p class="abstract-body abstract-body--narrow">This paper examines whether structural remedies can reverse the price effects of collusion. It exploits a unique overlap in the U.S. generic pharmaceutical industry, where a subset of molecules were simultaneously affected by the 2013–2015 generic price-fixing cartel and subject to the mandatory divestitures imposed by the Federal Trade Commission in the 2016 Teva-Allergan merger. By comparing the price evolution of molecules that were cartelized only, divested only, or both, the paper evaluates whether the divestitures restored competitive pricing precisely in the markets where prior collusion had elevated prices above competitive levels.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Awards -->
+    <section class="reveal" aria-labelledby="awards-title">
+      <h2 id="awards-title" class="section-title">Awards</h2>
+      <ul class="conf-detailed">
+        <li>
+          <span class="conf-name">Innova Award to the Young Researcher with the Best R&amp;D&amp;i Project (PhD)</span>, Universitat Rovira i Virgili
+          <span class="conf-place">(2026)</span>
+        </li>
+        <li>
+          <span class="conf-name">Young Talent Competition Award</span>, Lear Competition Festival
+          <span class="conf-place">(2025)</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Conference presentations -->
+    <section class="reveal" aria-labelledby="conf-title">
+      <h2 id="conf-title" class="section-title">Conference Presentations &amp; Seminars</h2>
+
+      <ul class="conf-detailed">
+        <li>
+          <span class="conf-name">CRES Seminar</span>, Universitat Pompeu Fabra
+          <span class="conf-place">(Barcelona, February 2026)</span>
+        </li>
+        <li>
+          <span class="conf-name">WIPE — Workshop on Industrial and Public Economics</span>
+          <span class="conf-place">(Reus, February 2026)</span>
+        </li>
+        <li>
+          <span class="conf-name">XXXIX Jornadas de Economía Industrial</span>
+          <span class="conf-place">(Santander, September 2025)</span>
+        </li>
+        <li>
+          <span class="conf-name">Lear Competition Festival</span>
+          <span class="conf-place">(Rome, September 2025)</span>
+        </li>
+        <li>
+          <span class="conf-name">EARIE — Annual Conference of the European Association for Research in Industrial Economics</span>
+          <span class="conf-place">(Valencia, August 2025)</span>
+        </li>
+        <li>
+          <span class="conf-name">Centre for Competition Policy (CCP) Seminar</span>
+          <span class="conf-place">(London, June 2025)</span>
+        </li>
+        <li>
+          <span class="conf-name">CCP Conference on Frontiers of Competition and Regulation</span>
+          <span class="conf-place">(London, June 2025)</span>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-name">Alejandro Medina Sandín</p>
+      <p>PhD Candidate in Economics, University of Verona</p>
+      <ul class="footer-links">
+        <li><a href="mailto:alejandro.medina@univr.it">Email</a></li>
+        <li><a href="CV_Medina_2026.pdf">CV</a></li>
+        <li><a href="https://ssrn.com/abstract=5308812" target="_blank" rel="noopener">SSRN</a></li>
+      </ul>
+      <p class="footer-copy">© 2026 Alejandro Medina Sandín</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
