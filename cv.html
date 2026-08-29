@@ -14,15 +14,15 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- ===================== HEADER ===================== -->
   <header class="site-header">
-    <div class="container">
-      <a class="brand" href="index.html">Alejandro Medina Sandín</a>
+    <div class="nav__in">
+      <a class="brand" href="index.html"><span class="dot"></span> Alejandro Medina Sandín</a>
       <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
           <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -40,147 +40,181 @@
   </header>
 
   <!-- ===================== MAIN ===================== -->
-  <main class="container">
+  <main>
 
-    <h1>Curriculum Vitae</h1>
-    <ul class="linkbar" aria-label="CV download">
-      <li><a class="btn btn--primary" href="CV_Medina_2026.pdf">Download CV (PDF)</a></li>
-    </ul>
+    <div class="page-head wrap">
+      <h1>Curriculum Vitae</h1>
+      <div class="hero__cta" style="margin-top: 28px;">
+        <a class="btn" href="CV_Medina_2026.pdf">Download CV (PDF) <span class="arr">→</span></a>
+      </div>
+    </div>
 
-    <!-- Education -->
-    <section class="cv-section reveal" aria-labelledby="edu-title">
-      <h2 id="edu-title" class="section-title">Education</h2>
-      <div class="cv-item">
-        <span class="cv-date">2026 (expected)</span>
-        <p class="cv-body"><strong>PhD in Economics and Finance</strong>, University of Verona <span class="cv-sub">Advisor: Paolo Pertile</span></p>
-      </div>
-      <div class="cv-item">
-        <span class="cv-date">2023–2024</span>
-        <p class="cv-body"><strong>Visiting Scholar</strong>, University of Mannheim</p>
-      </div>
-      <div class="cv-item">
-        <span class="cv-date">2022</span>
-        <p class="cv-body"><strong>MSc in Economics</strong>, Universitat de Barcelona</p>
-      </div>
-      <div class="cv-item">
-        <span class="cv-date">2020</span>
-        <p class="cv-body"><strong>BSc in Economics</strong>, Universitat Pompeu Fabra</p>
-      </div>
-    </section>
+    <div class="section wrap">
 
-    <!-- References -->
-    <section class="cv-section reveal" aria-labelledby="ref-title">
-      <h2 id="ref-title" class="section-title">References</h2>
-      <div class="cv-refs">
-        <div class="cv-ref">
-          <p><strong>Paolo Pertile</strong></p>
-          <p class="muted">University of Verona</p>
-          <p><a href="mailto:paolo.pertile@univr.it">paolo.pertile@univr.it</a></p>
-        </div>
-        <div class="cv-ref">
-          <p><strong>Athena Picarelli</strong></p>
-          <p class="muted">University of Verona</p>
-          <p><a href="mailto:athena.picarelli@univr.it">athena.picarelli@univr.it</a></p>
-        </div>
-        <div class="cv-ref">
-          <p><strong>Alessandro Bucciol</strong></p>
-          <p class="muted">University of Verona</p>
-          <p><a href="mailto:alessandro.bucciol@univr.it">alessandro.bucciol@univr.it</a></p>
+      <!-- Education -->
+      <div class="cv-row reveal">
+        <h2 id="edu-title">Education</h2>
+        <div>
+          <div class="cv-item">
+            <span class="yr">2022–2026 (exp.)</span>
+            <p class="d"><strong>PhD in Economics and Finance</strong>, University of Verona <span class="sub">Advisor: Paolo Pertile</span></p>
+          </div>
+          <div class="cv-item">
+            <span class="yr">2023–2024</span>
+            <p class="d"><strong>Visiting Scholar</strong>, University of Mannheim</p>
+          </div>
+          <div class="cv-item">
+            <span class="yr">2022</span>
+            <p class="d"><strong>MSc in Economics</strong>, Universitat de Barcelona</p>
+          </div>
+          <div class="cv-item">
+            <span class="yr">2020</span>
+            <p class="d"><strong>BSc in Economics</strong>, Universitat Pompeu Fabra</p>
+          </div>
         </div>
       </div>
-    </section>
 
-    <!-- Fields -->
-    <section class="cv-section reveal" aria-labelledby="fields-cv-title">
-      <h2 id="fields-cv-title" class="section-title">Fields</h2>
-      <p class="cv-inline"><strong>Primary:</strong> Empirical Industrial Organization, Competition Policy and Antitrust</p>
-      <p class="cv-inline"><strong>Secondary:</strong> Structural Econometrics, AI Applied to Economics</p>
-    </section>
+      <!-- References -->
+      <div class="cv-row reveal">
+        <h2 id="ref-title">References</h2>
+        <div>
+          <div class="cv-item">
+            <span class="yr">Advisor</span>
+            <p class="d"><strong>Paolo Pertile</strong>, University of Verona <span class="sub"><a href="mailto:paolo.pertile@univr.it">paolo.pertile@univr.it</a></span></p>
+          </div>
+          <div class="cv-item">
+            <span class="yr"></span>
+            <p class="d"><strong>Michelle Sovinsky</strong>, University of Mannheim <span class="sub"><a href="mailto:michelle.sovinsky@uni-mannheim.de">michelle.sovinsky@uni-mannheim.de</a></span></p>
+          </div>
+          <div class="cv-item">
+            <span class="yr"></span>
+            <p class="d"><strong>Albert Banal-Estañol</strong>, Universitat Pompeu Fabra <span class="sub"><a href="mailto:albert.banalestanol@upf.edu">albert.banalestanol@upf.edu</a></span></p>
+          </div>
+        </div>
+      </div>
 
-    <!-- Teaching -->
-    <section class="cv-section reveal" aria-labelledby="teach-title">
-      <h2 id="teach-title" class="section-title">Teaching Experience</h2>
-      <div class="cv-item">
-        <span class="cv-date">2026</span>
-        <p class="cv-body"><strong>Short Course on Artificial Intelligence</strong>, University of Huelva</p>
+      <!-- Fields -->
+      <div class="cv-row reveal">
+        <h2 id="fields-cv-title">Fields</h2>
+        <div>
+          <div class="cv-item">
+            <span class="yr">Primary</span>
+            <p class="d">Empirical Industrial Organization, Competition Policy and Antitrust</p>
+          </div>
+          <div class="cv-item">
+            <span class="yr">Secondary</span>
+            <p class="d">Structural Econometrics, AI Applied to Economics</p>
+          </div>
+        </div>
       </div>
-      <div class="cv-item">
-        <span class="cv-date">2023</span>
-        <p class="cv-body"><strong>Industrial Organization — Teaching Assistant</strong>, University of Verona</p>
-      </div>
-    </section>
 
-    <!-- Positions -->
-    <section class="cv-section reveal" aria-labelledby="pos-title">
-      <h2 id="pos-title" class="section-title">Relevant Positions</h2>
-      <div class="cv-item">
-        <span class="cv-date">2024–2025</span>
-        <p class="cv-body"><strong>Intern</strong>, Berkeley Research Group, Brussels <span class="cv-sub">European Competition practice</span></p>
+      <!-- Teaching -->
+      <div class="cv-row reveal">
+        <h2 id="teach-title">Teaching Experience</h2>
+        <div>
+          <div class="cv-item">
+            <span class="yr">2026</span>
+            <p class="d"><strong>Course on Research with Artificial Intelligence</strong>, University of Huelva</p>
+          </div>
+          <div class="cv-item">
+            <span class="yr">2023</span>
+            <p class="d"><strong>Industrial Organization — Teaching Assistant</strong>, University of Verona</p>
+          </div>
+        </div>
       </div>
-    </section>
 
-    <!-- Awards -->
-    <section class="cv-section reveal" aria-labelledby="awards-title">
-      <h2 id="awards-title" class="section-title">Fellowships and Awards</h2>
-      <div class="cv-item">
-        <span class="cv-date">2026</span>
-        <p class="cv-body"><strong>Innova Award to the Young Researcher with the Best R&amp;D&amp;i Project (PhD)</strong>, Universitat Rovira i Virgili <span class="cv-sub">Awarded for the paper "Pay for Delay: Preventing Competition in Pharmaceutical Markets", within the PhD-Student Workshop in Industrial and Public Economics (WIPE).</span></p>
+      <!-- Positions -->
+      <div class="cv-row reveal">
+        <h2 id="pos-title">Relevant Positions</h2>
+        <div>
+          <div class="cv-item">
+            <span class="yr">2024–2025</span>
+            <p class="d"><strong>Intern</strong>, Berkeley Research Group, Brussels <span class="sub">European Competition practice</span></p>
+          </div>
+        </div>
       </div>
-      <div class="cv-item">
-        <span class="cv-date">2025</span>
-        <p class="cv-body"><strong>Young Talent Competition Award</strong>, Lear Competition Festival <span class="cv-sub">Awarded for the paper "Pay for Delay: Preventing Competition in Pharmaceutical Markets"; prize for young researchers in competition law, economics, and regulation.</span></p>
-      </div>
-      <div class="cv-item">
-        <span class="cv-date">2022–2026</span>
-        <p class="cv-body"><strong>Study Grant (Borsa di Ateneo)</strong>, University of Verona</p>
-      </div>
-    </section>
 
-    <!-- Additional training -->
-    <section class="cv-section reveal" aria-labelledby="train-title">
-      <h2 id="train-title" class="section-title">Additional Training</h2>
-      <div class="cv-item">
-        <span class="cv-date">2024</span>
-        <p class="cv-body"><strong>Demand Estimation</strong> (A. Pakes, J. Gortmaker) — Causal Inference Workshop</p>
+      <!-- Awards -->
+      <div class="cv-row reveal">
+        <h2 id="awards-title">Fellowships and Awards</h2>
+        <div>
+          <div class="cv-item">
+            <span class="yr">2026</span>
+            <p class="d"><strong>Innova Award to the Young Researcher with the Best R&amp;D&amp;i Project (PhD)</strong>, Universitat Rovira i Virgili <span class="sub">Awarded for the paper "Pay for Delay: Preventing Competition in Pharmaceutical Markets", within the PhD-Student Workshop in Industrial and Public Economics (WIPE).</span></p>
+          </div>
+          <div class="cv-item">
+            <span class="yr">2025</span>
+            <p class="d"><strong>Young Talent Competition Award</strong>, Lear Competition Festival <span class="sub">Awarded for the paper "Pay for Delay: Preventing Competition in Pharmaceutical Markets"; prize for young researchers in competition law, economics, and regulation.</span></p>
+          </div>
+          <div class="cv-item">
+            <span class="yr">2022–2026</span>
+            <p class="d"><strong>Study Grant (Borsa di Ateneo)</strong>, University of Verona</p>
+          </div>
+        </div>
       </div>
-      <div class="cv-item">
-        <span class="cv-date">2023</span>
-        <p class="cv-body"><strong>CRESSE Summer School</strong> on Competition Policy and Regulation</p>
-      </div>
-      <div class="cv-item">
-        <span class="cv-date">2023</span>
-        <p class="cv-body"><strong>Center for Competition Policy Summer School</strong> in Platform Economics</p>
-      </div>
-    </section>
 
-    <!-- Presentations -->
-    <section class="cv-section reveal" aria-labelledby="pres-title">
-      <h2 id="pres-title" class="section-title">Presentations</h2>
-      <div class="cv-item">
-        <span class="cv-date">2026</span>
-        <p class="cv-body">CRES Seminar (Universitat Pompeu Fabra, Barcelona), WIPE Workshop (Reus)</p>
+      <!-- Additional training -->
+      <div class="cv-row reveal">
+        <h2 id="train-title">Additional Training</h2>
+        <div>
+          <div class="cv-item">
+            <span class="yr">2024</span>
+            <p class="d"><strong>Demand Estimation</strong> (A. Pakes, J. Gortmaker) — Causal Inference Workshop</p>
+          </div>
+          <div class="cv-item">
+            <span class="yr">2023</span>
+            <p class="d"><strong>CRESSE Summer School</strong> on Competition Policy and Regulation</p>
+          </div>
+          <div class="cv-item">
+            <span class="yr">2023</span>
+            <p class="d"><strong>Center for Competition Policy Summer School</strong> in Platform Economics</p>
+          </div>
+        </div>
       </div>
-      <div class="cv-item">
-        <span class="cv-date">2025</span>
-        <p class="cv-body">EARIE (Valencia), Lear Competition Festival (Rome), Center for Competition Policy (London), Jornadas de Economía Industrial (Santander), CCP Conference on Frontiers of Competition and Regulation</p>
-      </div>
-    </section>
 
-    <!-- Personal details -->
-    <section class="cv-section reveal" aria-labelledby="personal-title">
-      <h2 id="personal-title" class="section-title">Personal Details</h2>
-      <p class="cv-inline"><strong>Citizenship:</strong> Spanish</p>
-      <p class="cv-inline"><strong>Languages:</strong> Spanish (native), Catalan (native), English (C1), Italian (B2)</p>
-      <p class="cv-inline"><strong>Software:</strong> Stata, MATLAB, Python, R, LaTeX</p>
-    </section>
+      <!-- Presentations -->
+      <div class="cv-row reveal">
+        <h2 id="pres-title">Presentations</h2>
+        <div>
+          <div class="cv-item">
+            <span class="yr">2026</span>
+            <p class="d">XL Jornadas de Economía Industrial (Málaga), EARIE (Mannheim), BSE PhD Jamboree (Barcelona), EuHEA Seminar Series (online), CRES Seminar (Universitat Pompeu Fabra, Barcelona), WIPE Workshop (Reus)</p>
+          </div>
+          <div class="cv-item">
+            <span class="yr">2025</span>
+            <p class="d">EARIE (Valencia), Lear Competition Festival (Rome), Center for Competition Policy (London), Jornadas de Economía Industrial (Santander), CCP Conference on Frontiers of Competition and Regulation</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Personal details -->
+      <div class="cv-row reveal">
+        <h2 id="personal-title">Personal Details</h2>
+        <div>
+          <div class="cv-item">
+            <span class="yr">Citizenship</span>
+            <p class="d">Spanish</p>
+          </div>
+          <div class="cv-item">
+            <span class="yr">Languages</span>
+            <p class="d">Spanish (native), Catalan (native), English (C1), Italian (B2)</p>
+          </div>
+          <div class="cv-item">
+            <span class="yr">Software</span>
+            <p class="d"><span class="cv-tags"><span>Stata</span><span>MATLAB</span><span>Python</span><span>R</span><span>LaTeX</span></span></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
   </main>
 
   <!-- ===================== FOOTER ===================== -->
   <footer class="site-footer">
-    <div class="container">
+    <div class="wrap">
       <p class="footer-name">Alejandro Medina Sandín</p>
-      <p>PhD Candidate in Economics, University of Verona</p>
+      <p class="footer-role">PhD Candidate in Economics, University of Verona</p>
       <ul class="footer-links">
         <li><a href="mailto:alejandro.medina@univr.it">Email</a></li>
         <li><a href="CV_Medina_2026.pdf">CV</a></li>
